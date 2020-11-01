@@ -12,6 +12,7 @@ package Chapter_19_Generics.Exercise_19_04;
 public class Pair_with_min<E> {
     private E first;
     private E second;
+    
     public Pair_with_min(E first, E second) {
         this.first = first;
         this.second = second;
@@ -30,9 +31,10 @@ public class Pair_with_min<E> {
     }
     
     public void setSecond(E newSecond) {
-        this.first = newSecond;
+        this.second = newSecond;
     }
     
+    @Override
     public String toString() {
         String output = "Pair: [" + getFirst() + ", " + getSecond() + "]";
         return output;

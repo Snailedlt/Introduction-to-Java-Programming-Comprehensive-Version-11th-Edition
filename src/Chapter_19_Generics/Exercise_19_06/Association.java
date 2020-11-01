@@ -1,18 +1,19 @@
 /*
- * Create a Pair class that encapsulates two objects 
- * of the same data type in an instance of Pair
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
-package Chapter_19_Generics.Exercise_19_03;
+package Chapter_19_Generics.Exercise_19_06;
 
 /**
  *
- * @author J�rgen
+ * @author Jørgen
  */
-public class Pair<E> {
+public class Association<E, E2> {
     private E first;
-    private E second;
+    private E2 second;
     
-    public Pair(E first, E second) {
+    public Association(E first, E2 second) {
         this.first = first;
         this.second = second;
     }
@@ -21,7 +22,7 @@ public class Pair<E> {
         return first;
     }
     
-    public E getSecond() {
+    public E2 getSecond() {
         return second;
     }
     
@@ -29,7 +30,7 @@ public class Pair<E> {
         this.first = newFirst;
     }
     
-    public void setSecond(E newSecond) {
+    public void setSecond(E2 newSecond) {
         this.second = newSecond;
     }
     

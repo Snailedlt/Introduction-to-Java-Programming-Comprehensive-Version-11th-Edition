@@ -5,7 +5,7 @@
  */
 package Chapter_19_Generics.Exercise_19_04;
 
-import static Chapter_19_Generics.Exercise_19_04.Pair.min;
+import static Chapter_19_Generics.Exercise_19_04.Pair_with_min.min;
 
 /**
  *
@@ -19,10 +19,10 @@ public class Main {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        Pair<Integer> pair = new Pair(5, 30);
-        Pair<String> pair2 = new Pair("This is a String", "This is another String");
-        Pair<Integer> pair3 = new Pair(5, 5);
-        Pair<Integer> pair4 = new Pair(30, 2);
+        Pair_with_min<Integer> pair = new Pair_with_min<>(5, 30);
+        Pair_with_min<String> pair2 = new Pair_with_min<>("This is a String", "This is another String");
+        Pair_with_min<Integer> pair3 = new Pair_with_min<>(5, 5);
+        Pair_with_min<Integer> pair4 = new Pair_with_min<>(30, 2);
         System.out.println(pair);
         System.out.println(pair2);
         System.out.println(min(pair).toString());

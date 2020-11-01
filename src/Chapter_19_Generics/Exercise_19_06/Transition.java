@@ -3,18 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Chapter_19_Generics.Exercise_19_05;
+package Chapter_19_Generics.Exercise_19_06;
 
 /**
  *
  * @author Jørgen
  */
-public class Triplet<E> {
+public class Transition<E, E2, E3> {
     private E first;
-    private E second;
-    private E third;
+    private E2 second;
+    private E3 third;
     
-    public Triplet(E first, E second, E third) {
+    public Transition(E first, E2 second, E3 third) {
         this.first = first;
         this.second = second;
         this.third = third;
@@ -24,11 +24,11 @@ public class Triplet<E> {
         return first;
     }
     
-    public E getSecond() {
+    public E2 getSecond() {
         return second;
     }
     
-    public E getThird() {
+    public E3 getThird() {
         return third;
     }
     
@@ -36,17 +36,17 @@ public class Triplet<E> {
         this.first = newFirst;
     }
     
-    public void setSecond(E newSecond) {
+    public void setSecond(E2 newSecond) {
         this.second = newSecond;
     }
     
-    public void setThird(E newThird) {
+    public void setThird(E3 newThird) {
         this.third = newThird;
     }
     
     @Override
     public String toString() {
-        String output = "Triplet: [" + getFirst() + ", " + getSecond() + ", " + getThird() + "]";
+        String output = "Pair: [" + getFirst().toString() + ", " + getSecond().toString() + ", " + getThird().toString() + "]";
         return output;
     }
 }

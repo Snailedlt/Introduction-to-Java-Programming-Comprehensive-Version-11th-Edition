@@ -20,8 +20,8 @@ public class Main {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        Pair<Integer> pair = new Pair(5, 30);
-        Pair<String> pair2 = new Pair("This is a String", "This is another String");
+        Pair<Integer> pair = new Pair<>(5, 30);
+        Pair<String> pair2 = new Pair<>("This is a String", "This is another String");
         System.out.println(pair);
         System.out.println(pair2);
     }

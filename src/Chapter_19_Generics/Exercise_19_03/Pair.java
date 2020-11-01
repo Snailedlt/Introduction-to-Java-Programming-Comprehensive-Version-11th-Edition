@@ -1,7 +1,6 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Create a Pair class that encapsulates two objects 
+ * of the same data type in an instance of Pair
  */
 package Chapter_19_Generics.Exercise_19_03;
 

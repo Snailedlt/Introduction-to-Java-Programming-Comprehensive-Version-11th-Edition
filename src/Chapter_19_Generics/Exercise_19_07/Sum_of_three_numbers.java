@@ -11,12 +11,8 @@ import Chapter_19_Generics.Exercise_19_06.Transition;
  *
  * @author Jørgen
  */
-public class Sum_of_three_numbers {   /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        System.out.println(sum(new Transition<>(2.63, 2, 42f)));
-    } 
+public class Sum_of_three_numbers {   
+    
     public static double sum(Transition<? extends Number, ? extends Number, ? extends Number> transition) {
         Number first = transition.getFirst();
         Number second = transition.getSecond();

@@ -4,10 +4,6 @@
  */
 package Chapter_19_Generics.Exercise_19_03;
 
-/**
- *
- * @author J�rgen
- */
 public class Pair<E> {
     private E first;
     private E second;

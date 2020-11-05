@@ -1,14 +1,9 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Creates an Association class that encapsulates two objects of different types.
  */
+
 package Chapter_19_Generics.Exercise_19_06;
 
-/**
- *
- * @author Jørgen
- */
 public class Association<E, E2> {
     private E first;
     private E2 second;

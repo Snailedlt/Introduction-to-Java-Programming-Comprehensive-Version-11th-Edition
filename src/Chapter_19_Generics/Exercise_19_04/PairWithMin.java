@@ -4,16 +4,11 @@
  */
 package Chapter_19_Generics.Exercise_19_04;
 
-/**
- *
- * @author Jørgen
- */
-
-public class Pair_with_min<E> {
+public class PairWithMin<E> {
     private E first;
     private E second;
     
-    public Pair_with_min(E first, E second) {
+    public PairWithMin(E first, E second) {
         this.first = first;
         this.second = second;
     }
@@ -40,7 +35,7 @@ public class Pair_with_min<E> {
         return output;
     }
     
-    public static <E extends Comparable> E min(Pair_with_min<? extends Comparable> pair) {
+    public static <E extends Comparable> E min(PairWithMin<? extends Comparable> pair) {
         E first = (E) pair.getFirst();
         E second = (E) pair.getSecond();
         if(first.compareTo(second) > 0)

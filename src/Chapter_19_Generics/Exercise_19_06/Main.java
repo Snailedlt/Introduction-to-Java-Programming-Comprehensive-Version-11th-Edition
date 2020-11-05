@@ -1,19 +1,10 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Tests Association and Transition classes
  */
 package Chapter_19_Generics.Exercise_19_06;
 
-/**
- *
- * @author Jørgen
- */
 public class Main {
-   
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) {
         
         //Test Association
@@ -27,7 +18,7 @@ public class Main {
         System.out.println(association4);
         System.out.println("association3 second: " + association3.getSecond());
         
-        //Test transition
+        //Test Transition
         Transition<Integer, String, String> transition = new Transition<>(5, "This is a String", "This is a 2nd String");
         Transition<String, String, String> transition2 = new Transition<>("This is a String", "This is another String", "This is a third String");
         Transition<Integer, Double, String> transition3 = new Transition<>(5, (double) 5, "This is a String");

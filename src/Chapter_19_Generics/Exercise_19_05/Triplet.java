@@ -1,14 +1,10 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Creates a Triplet class that encapsulates three objects of the same data type
+ * in a given instance of Triplet
  */
+
 package Chapter_19_Generics.Exercise_19_05;
 
-/**
- *
- * @author Jørgen
- */
 public class Triplet<E> {
     private E first;
     private E second;

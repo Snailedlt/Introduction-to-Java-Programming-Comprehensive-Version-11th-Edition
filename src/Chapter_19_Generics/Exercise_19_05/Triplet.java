@@ -1,7 +1,7 @@
-/*
+/*********************************************************************************
  * Creates a Triplet class that encapsulates three objects of the same data type
  * in a given instance of Triplet
- */
+ *********************************************************************************/
 
 package Chapter_19_Generics.Exercise_19_05;
 

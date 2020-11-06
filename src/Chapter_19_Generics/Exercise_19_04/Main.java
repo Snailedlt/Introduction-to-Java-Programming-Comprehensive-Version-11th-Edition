@@ -1,6 +1,6 @@
-/*
+/*********************************************************************************
  * Tests the PairWithMin class
- */
+ *********************************************************************************/
 package Chapter_19_Generics.Exercise_19_04;
 
 import static Chapter_19_Generics.Exercise_19_04.PairWithMin.min;

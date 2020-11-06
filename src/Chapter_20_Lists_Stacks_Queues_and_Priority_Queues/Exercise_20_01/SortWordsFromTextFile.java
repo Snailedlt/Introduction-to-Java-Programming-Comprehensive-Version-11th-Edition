@@ -1,6 +1,7 @@
-/*
- * Reads the words from a text file, and displays them in descending alphabetical order.
- */
+/*********************************************************************************
+ * Reads the words from a text file, and displays them in descending alphabetical 
+ * order.
+ *********************************************************************************/
 package Chapter_20_Lists_Stacks_Queues_and_Priority_Queues.Exercise_20_01;
 
 import java.io.File;

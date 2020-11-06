@@ -1,6 +1,6 @@
-/*
+/*********************************************************************************
  * Method that returns the sum of three numbers in a Transition
- */
+ *********************************************************************************/
 package Chapter_19_Generics.Exercise_19_07;
 
 import Chapter_19_Generics.Exercise_19_06.Transition;

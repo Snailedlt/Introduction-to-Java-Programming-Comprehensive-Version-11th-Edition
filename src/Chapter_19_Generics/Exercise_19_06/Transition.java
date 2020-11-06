@@ -1,7 +1,7 @@
-/*
+/*********************************************************************************
  * Similar to Exercise_19_05, this is a Transition class that does the same as
  * Association class, but with three objects.
- */
+ *********************************************************************************/
 package Chapter_19_Generics.Exercise_19_06;
 
 public class Transition<E, E2, E3> {

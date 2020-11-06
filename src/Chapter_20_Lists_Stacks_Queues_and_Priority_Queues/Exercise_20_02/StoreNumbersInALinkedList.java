@@ -1,9 +1,10 @@
-/*
- * Lets the user enter numbers in the GUI, and dispays them in a text area.
- * the input is stored in a LinkedList, and can be sorted, shuffled and reversed with 
- * their respective methods. Sort, Shuffle and Reverse buttons will call their
- * respective methods, and the updated LinkedList will be shown in the text area.
- */
+/*********************************************************************************
+ * Lets the user enter numbers in the GUI, and displays them in a text area.
+ * the input is stored in a LinkedList, and can be sorted, shuffled and reversed 
+ * with their respective methods. Sort, Shuffle and Reverse buttons will call
+ * their respective methods, and the updated LinkedList will be shown in the text
+ * area.
+ *********************************************************************************/
 package Chapter_20_Lists_Stacks_Queues_and_Priority_Queues.Exercise_20_02;
 
 import java.util.Collections;
@@ -20,7 +21,7 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 
-public class Exercise_20_02 extends Application {
+public class StoreNumbersInALinkedList extends Application {
     
         protected Label label = new Label("Enter a number: ");
         protected TextField text = new TextField();
@@ -29,29 +30,33 @@ public class Exercise_20_02 extends Application {
     
     @Override
     public void start(Stage primaryStage) {
-        
+        //Add 3 buttons
         Button btnSort = new Button("Sort");
         Button btnShuffle = new Button("Shuffle");
         Button btnReverse = new Button("Reverse");
         
+        //Add label and text to hBoxInput
         HBox hBoxInput = new HBox(10);
         hBoxInput.getChildren().addAll(label, text);
         hBoxInput.setAlignment(Pos.CENTER);
         
+        //Add the 3 buttons to hBoxBtn
         HBox hBoxBtn = new HBox(10);
         hBoxBtn.getChildren().addAll(btnSort, btnShuffle, btnReverse);
         hBoxBtn.setAlignment(Pos.CENTER);
         
-        
+        //Add the TextArea to a ScrollPane
         ScrollPane scrollPane = new ScrollPane();
         scrollPane.setContent(textArea);
         scrollPane.setVbarPolicy(ScrollPane.ScrollBarPolicy.ALWAYS);
         
+        //Add a BorderPane
         BorderPane root = new BorderPane();
-        root.setTop(hBoxInput);
-        root.setCenter(scrollPane);
-        root.setBottom(hBoxBtn);
+        root.setTop(hBoxInput); //set hBoxInput to the top of the BorderPane
+        root.setCenter(scrollPane); //set hBoxInput to the center of the BorderPane
+        root.setBottom(hBoxBtn); //set hBoxInput to the bottom of the BorderPane
         
+        //ActionListeners
         text.setOnAction(e -> {
             linkedList.add(Integer.parseInt(text.getText()));
             updateTextArea();
@@ -72,6 +77,7 @@ public class Exercise_20_02 extends Application {
             updateTextArea();
         });
         
+        //Create a scene, and add the BorderPane to that scene
         Scene scene = new Scene(root, 300, 250);
         primaryStage.setTitle("Linked List Operations");
         primaryStage.setScene(scene);
@@ -82,18 +88,22 @@ public class Exercise_20_02 extends Application {
         launch(args);
     }
     
+    //Sort the linkedList
     private void sort() {
         Collections.sort(linkedList);
     }
     
+    //Shuffle the linkedList
     private void shuffle() {
         Collections.shuffle(linkedList);
     }
     
+    //Reverse the linkedList
     private void reverse() {
         Collections.reverse(linkedList);
     }
     
+    //Update the TextArea with numbers from the linkedList
     private void updateTextArea() {
         String result = "";
         for(int i = 0; i < linkedList.size(); i++) {

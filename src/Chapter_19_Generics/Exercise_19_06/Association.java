@@ -1,6 +1,6 @@
-/*
+/*********************************************************************************
  * Creates an Association class that encapsulates two objects of different types.
- */
+ *********************************************************************************/
 
 package Chapter_19_Generics.Exercise_19_06;
 

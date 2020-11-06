@@ -1,7 +1,7 @@
-/*
- * Write a generic static method that returns the 
- * smallest value in an instance of Pair from Programming Exercise 19.3
- */
+/*********************************************************************************
+ * Write a generic static method that returns the smallest value in an instance 
+ * of Pair from Programming Exercise 19.3
+ *********************************************************************************/
 package Chapter_19_Generics.Exercise_19_04;
 
 public class PairWithMin<E> {

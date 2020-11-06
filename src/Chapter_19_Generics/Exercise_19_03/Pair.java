@@ -1,7 +1,7 @@
-/*
+/*********************************************************************************
  * Create a Pair class that encapsulates two objects 
  * of the same data type in an instance of Pair
- */
+ *********************************************************************************/
 package Chapter_19_Generics.Exercise_19_03;
 
 public class Pair<E> {
